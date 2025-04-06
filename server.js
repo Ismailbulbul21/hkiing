@@ -14,10 +14,10 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // Database connection
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: 'ismail211084',
-    database: 'access_manager'
+    host: process.env.DB_HOST || 'localhost',
+    user: process.env.DB_USER || 'root',
+    password: process.env.DB_PASSWORD || 'ismail211084',
+    database: process.env.DB_NAME || 'access_manager'
 });
 
 db.connect((err) => {
