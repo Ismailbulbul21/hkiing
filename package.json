@@ -1,0 +1,49 @@
+{
+  "name": "huggingface",
+  "private": true,
+  "version": "0.0.0",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "vite",
+    "dev:all": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.2.0",
+    "@heroicons/react": "^2.2.0",
+    "@smithery/cli": "^1.1.66",
+    "@tailwindcss/vite": "^4.1.3",
+    "@tanstack/react-query": "^5.71.10",
+    "axios": "^1.8.4",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "daisyui": "^5.0.12",
+    "express": "^4.18.2",
+    "mysql2": "^3.6.5",
+    "postcss": "^8.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.55.0",
+    "react-router-dom": "^7.4.1",
+    "tailwindcss": "^4.1.3"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@tailwindcss/postcss": "^4.1.3",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.21.0",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^15.15.0",
+    "nodemon": "^3.0.1",
+    "vite": "^6.2.3"
+  }
+}
